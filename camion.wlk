@@ -24,6 +24,6 @@ method execidoDePeso() = self.pesoTotalCamion()> 2500
 
 method nadaSuperNivelDePeligrosidad(nivel) = self.cosasQueSuperanNivel_(nivel).isEmpty()
 
-//method puedeCircular() = !execidoDePeso() && nadaSuperNivelDePeligrosidad(nivel)
+method puedeCircular(peligrosidad) { !self.execidoDePeso() && self.nadaSuperNivelDePeligrosidad(peligrosidad)}
  
 }
